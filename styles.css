@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input, button {
+    font: inherit;
+}
+
+p, h1, h2 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2 {
+    text-wrap: balance;
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(./assets/fonts/Norse-Bold.otf);
+}
+
+a {
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.background {
+    background-image: url(./assets/images/sign-up-image.jpg);
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    position: relative;
+    top: 20%;
+    font-size: 1.6rem;
+    font-family: 'Norse Bold', fantasy;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    padding: 1rem;
+}
+
+.logo-container img {
+    height: 3em;
+}
+
+.photo-credit {
+    margin-top: auto;
+    align-self: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+.content {
+    flex: 2;
+    margin: auto 0;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 0 2em;
+    max-width: 62ch;
+}
+
+.description-text p:last-child {
+    margin: 1em 0 2em;
+}
+
+label, input {
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #fff;
+    box-shadow: 1px 3px 12px 2px rgba(0, 0, 0, 0.1);
+    padding: 2em 3em;
+}
+
+.form-row {
+    display: flex;
+    gap: 5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.form-row input {
+    border: 1px solid #E5E7EB;
+    font-size: 1rem;
+    padding: 0.4em 1em;
+    border-radius: 2px;
+}
+
+input:focus {
+    border: 1px solid #34609f;
+    box-shadow: 1px 3px 12px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+/*
+input:invalid {
+    border: 1px solid #d11919
+}*/
+
+.submit-btn {
+    background-color: #596D48;
+    padding: 0.5em 2em;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin: 2em;
+}
+
+.login {
+    margin: 0 2em;
+}
+
+.login a {
+    color: #596D48;
+    text-decoration: none;
+}
